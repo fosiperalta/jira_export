@@ -1,4 +1,7 @@
 require "jira_export/version"
+require 'httparty'
+require 'rest-client'
+require 'pry'
 
 module JiraExport
   class JiraSprint
@@ -46,7 +49,7 @@ module JiraExport
 
   def self.parse_sprint_name_field(field)
     field.first.split(',').find { |e| e.include?('name') }.split('=')[1]
-  endø
+  end
 
   JiraSprint.cleaned_result(ARGV)
 end
