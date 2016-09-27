@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["fosiperalta"]
   spec.email         = ["fosiperalta@gmail.com"]
 
-  spec.summary       = %q{Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{Write a longer description or delete this line.}
+  spec.summary       = %q{Export the done issues in a list of sprints from Jira.}
+  spec.description   = %q{Export the done issues in a list of sprints from Jira.}
   spec.homepage      = "https://github.com/fosiperalta/jira_export/"
   spec.license       = "MIT"
   spec.executables = ["jira_export"]
