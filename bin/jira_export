@@ -1,0 +1,14 @@
+require 'jira_export'
+
+puts "Enter your username"
+user = gets.chomp
+
+puts "Enter your password"
+password = gets.chomp
+
+exporter = JiraExport::Exporter.new(user, password)
+
+puts "Enter the Jira IDs of the Sprints you want to export."
+sprints = gets.chomp
+
+exporter.cleaned_result(sprints.split(' '))

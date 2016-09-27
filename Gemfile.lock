@@ -3,7 +3,7 @@ PATH
   specs:
     jira_export (0.1.0)
       httparty
-      rest-client
+      rest-client (<= 1.8.0)
 
 GEM
   remote: https://rubygems.org/
@@ -11,6 +11,7 @@ GEM
     coderay (1.1.1)
     domain_name (0.5.20160826)
       unf (>= 0.0.5, < 1.0.0)
+    gem-release (0.7.4)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     httparty (0.14.0)
@@ -37,6 +38,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.13)
+  gem-release
   httparty
   jira_export!
   pry
